@@ -1,0 +1,1 @@
+curl -L https://raw.github.com/zonk1024/git-configs/master/quick.sh | bash
