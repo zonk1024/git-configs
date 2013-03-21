@@ -14,4 +14,5 @@ git config --global alias.dms "diff master --name-status"
 git config --global alias.cm "commit -am 'merged in master'"
 git config --global alias.rh "reset --hard"
 git config --global alias.st "status"
+git config --global alias.co "checkout"
 git config --global core.editor vi
