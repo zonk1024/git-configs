@@ -17,3 +17,5 @@ git config --global alias.rh "reset --hard"
 git config --global alias.st "status"
 git config --global alias.co "checkout"
 git config --global core.editor vi
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
