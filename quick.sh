@@ -19,3 +19,4 @@ git config --global alias.co "checkout"
 git config --global core.editor vi
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
+git config --global merge.conflictstyle diff3
