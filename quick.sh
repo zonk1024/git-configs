@@ -16,6 +16,7 @@ git config --global alias.f "fetch"
 git config --global alias.rh "reset --hard"
 git config --global alias.st "status"
 git config --global alias.co "checkout"
+git config --global alias.coh "checkout HEAD"
 git config --global core.editor vi
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
