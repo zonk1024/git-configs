@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 git config --global user.name "Chris Jacobs"
 git config --global user.email "zonk1024@gmail.com"
 git config --global color.ui auto
