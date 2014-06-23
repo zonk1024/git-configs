@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 git config --global user.name "Chris Jacobs"
 git config --global user.email "zonk1024@gmail.com"
 git config --global color.ui auto
@@ -33,7 +33,7 @@ git config --global merge.conflictstyle diff3
 if [ ! -f "$HOME/.gitignore" -a ! -L "$HOME/.gitignore" ]; then
   wget -O "$HOME/.gitignore" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
 else
-  wget -O "/dev/shm/git-stuffs.$$" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
+  wget -O "/dev/shm/git-stuffs.$$" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitignore"
   cat "$HOME/.gitignore" >> /dev/shm/git-stuffs.$$
   sort "/dev/shm/git-stuffs.$$" | uniq > $HOME/.gitignore
   rm -f "/dev/shm/git-stuffs.$$"
