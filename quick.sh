@@ -30,11 +30,11 @@ git config --global alias.lol "log --oneline --decorate --graph"
 git config --global alias.d2 "diff --color-words=. -w"
 git config --global merge.conflictstyle diff3
 
-if [ ! -f "~/.gitignore" -a ! -L "~/.gitignore" ]; then
-  wget -O "~/.gitignore" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
+if [ ! -f "$HOME/.gitignore" -a ! -L "$HOME/.gitignore" ]; then
+  wget -O "$HOME/.gitignore" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
 else
   wget -O "/dev/shm/git-stuffs.$$" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
-  cat "~/.gitignore" >> /dev/shm/git-stuffs.$$
-  sort "/dev/shm/git-stuffs.$$" | uniq > ~/.gitignore
+  cat "$HOME/.gitignore" >> /dev/shm/git-stuffs.$$
+  sort "/dev/shm/git-stuffs.$$" | uniq > $HOME/.gitignore
   rm -f "/dev/shm/git-stuffs.$$"
 fi 
