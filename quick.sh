@@ -31,7 +31,7 @@ git config --global alias.d2 "diff --color-words=. -w"
 git config --global merge.conflictstyle diff3
 
 if [ ! -f "$HOME/.gitignore" -a ! -L "$HOME/.gitignore" ]; then
-  wget -O "$HOME/.gitignore" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitconfig"
+  wget -O "$HOME/.gitignore" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitignore"
 else
   wget -O "/dev/shm/git-stuffs.$$" "https://raw.githubusercontent.com/zonk1024/git-configs/master/.gitignore"
   cat "$HOME/.gitignore" >> /dev/shm/git-stuffs.$$
