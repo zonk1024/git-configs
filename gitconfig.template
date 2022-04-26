@@ -1,0 +1,51 @@
+[alias]
+	a = add --all
+	b = branch
+	c = commit -am
+	cb = branch --show-current
+	co = checkout
+	cob = checkout -b
+	com = checkout main
+	f = fetch
+	fa = fetch --all
+	lol = log --oneline --decorate --graph
+	los = log --oneline --decorate --graph --shortstat
+	ls = branch --all
+	p = push
+    rh = reset --hard
+	st = status
+
+	#########
+	# diffs #
+	#########
+	d = diff -w
+	d2 = diff -w --color-words='[^ \t]*'
+	do = diff --name-only
+    # HEAD - h
+	dh = diff -w HEAD
+    d2h = diff -w --color-words='[^ \t]*' HEAD
+	dho = diff --name-only HEAD
+    # HEAD^ - hh
+	dhh = diff -w HEAD^
+    d2hh = diff -w --color-words='[^ \t]*' HEAD^
+	dhho = diff --name-only HEAD^
+    # main - m
+	dm = diff -w main
+    d2m = diff -w --color-words='[^ \t]*' main
+	dmo = diff --name-only main
+    # master - mm
+	dma = diff -w master
+    d2mm = diff -w --color-words='[^ \t]*' master
+	dmmo = diff --name-only master
+[user]
+	email = EMAIL
+	name = FULL_NAME
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
